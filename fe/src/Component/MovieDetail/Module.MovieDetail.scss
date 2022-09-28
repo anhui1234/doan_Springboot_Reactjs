@@ -1,0 +1,75 @@
+.movieModal{
+    .backdrop{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 200;
+        background-color: rgba(0,0,0,0.6);
+        
+    }
+    .modal{
+        position: fixed;
+        top:25%;
+        left:0;
+        z-index: 300;
+        height: 60%;
+        width: 100%;
+        margin: 0 auto;
+        color: white;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        .container{
+            position: relative;
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(90deg,rgba(0,0,0,0.94) 60%,transparent);
+            .movieInfo{
+                width: 65%;
+                height: 100%;
+                padding-left: 24px;
+                color: white;
+                font-size: 20px;
+                padding-top: 30px;
+                .movieTitle{
+                    margin-top: 30px;
+                }
+                .statiscal{
+                    margin-top: 20px;
+                    display: flex;
+                    .rating{
+                        color: green;
+                    }
+                    .popularly{
+                        color: yellow;
+                        margin-left: 12px;
+                    }
+                }
+                .runtime{
+                    margin-top: 12px;
+                }
+                .overview{
+                    margin-top: 20px;
+                    color: rgba(255,255,255,0.6);
+                    line-height: 1.4;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+.showModal{
+    top: 25%;
+    opacity: 1;
+    left: 0;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+
+}
+.hideModal{
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+}
